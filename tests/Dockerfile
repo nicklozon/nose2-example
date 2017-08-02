@@ -10,4 +10,4 @@ COPY . /app
 
 WORKDIR /app
 
-ENTRYPOINT [ "bash", "tests/runtests.sh" ]
+ENTRYPOINT [ "bash", "runtests.sh" ]
