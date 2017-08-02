@@ -10,6 +10,7 @@ class TestCase(unittest.TestCase):
 
     def test_hello(self):
         rv = self.app.get('/')
+        print(rv.data)
         assert rv.data == b'Hello World'
 
 

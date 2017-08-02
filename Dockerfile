@@ -1,11 +1,5 @@
-FROM tiangolo/uwsgi-nginx:python2.7
+FROM tiangolo/uwsgi-nginx-flask:flask
 
 MAINTAINER Nick Lozon <nick.lozon@cleverfew.co>
 
-RUN pip install flask
-
-# Add app configuration to Nginx
-COPY nginx.conf /etc/nginx/conf.d/
-
-# Copy sample app
-COPY app /app
+COPY ./app /app
