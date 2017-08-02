@@ -1,3 +1,4 @@
+# Use docker-compose for development
 version: '2'
 services:
   web:
