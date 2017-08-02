@@ -1,14 +1,15 @@
 <testsuite errors="1" failures="0" name="nose2-junit" skipped="0" tests="1" time="0.001">
-  <testcase classname="nose2.loader.ModuleImportFailure" name="test" time="0.000147">
+  <testcase classname="nose2.loader.ModuleImportFailure" name="test" time="0.000223">
     <error message="test failure">ImportError: Failed to import test module: test
 Traceback (most recent call last):
   File "/home/nick/.virtualenvs/flask/lib/python3.6/site-packages/nose2/plugins/loader/discovery.py", line 200, in _find_tests_in_file
     module = util.module_from_name(module_name)
   File "/home/nick/.virtualenvs/flask/lib/python3.6/site-packages/nose2/util.py", line 90, in module_from_name
     __import__(name)
-  File "/home/nick/repos/flask/tests/test.py", line 6, in &lt;module&gt;
-    from app import app
-ModuleNotFoundError: No module named 'app'
+  File "/home/nick/repos/flask/tests/test.py", line 5
+    from ../app import app
+           ^
+SyntaxError: invalid syntax
 
 </error>
     <system-err />
