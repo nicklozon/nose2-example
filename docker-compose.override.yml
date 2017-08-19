@@ -1,0 +1,13 @@
+web:
+  build: .
+  ports:
+    - "8080:80"
+  volumes:
+    - ./app:/app
+  environment:
+    DEBUG: 'true'
+    DATABASE_URL: 'postgres://db:5432'
+  links:
+    - db
+db:
+  image: postgres:latest
