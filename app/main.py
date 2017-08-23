@@ -5,8 +5,9 @@ import psycopg2
 
 app = Flask(__name__)
 
+conf_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'config')
 env = os.getenv('APP_ENV')
-with open('config/db.{0}.json'.format(env)) as db_conf:
+with open('{0}/db.{1}.json'.format(conf_path, env)) as db_conf:
     data = json.load(db_conf)
 
 conn = psycopg2.connect(host=data['host'], user=data['user'])
