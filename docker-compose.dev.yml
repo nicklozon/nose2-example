@@ -1,6 +1,4 @@
 web:
   build: .
-  ports:
-    - "80:80"
   environment:
-    PRODUCTION: 'false'
+    APP_ENV: 'dev'

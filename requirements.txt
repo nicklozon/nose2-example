@@ -4,5 +4,6 @@ itsdangerous==0.24
 Jinja2==2.9.6
 MarkupSafe==1.0
 nose2==0.6.5
+psycopg2==2.7.3
 six==1.10.0
 Werkzeug==0.12.2

@@ -4,6 +4,6 @@ web:
   links:
     - redis
   environment:
-    DATABASE_URL: 'postgrest://production-db.example.com:12345'
+    APP_ENV: 'production'
 redis:
   image: "redis:alpine"
