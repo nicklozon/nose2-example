@@ -1,4 +1,4 @@
 {
-    "host": "flask_db_1",
+    "host": "nose2example_db_1",
     "user": "postgres"
 }
