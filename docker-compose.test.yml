@@ -1,0 +1,13 @@
+web:
+  build: .
+  volumes:
+    - ./:/app
+  environment:
+    DEBUG: 'true'
+    APP_ENV: 'dev'
+  links:
+    - db
+  entrypoint:
+    - bash
+db:
+  image: postgres:latest
